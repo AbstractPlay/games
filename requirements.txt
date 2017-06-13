@@ -1,0 +1,11 @@
+cheroot==5.5.0
+CherryPy==10.2.2
+Jinja2==2.9.6
+jsonschema==2.6.0
+MarkupSafe==1.0
+portend==1.8
+pytz==2017.2
+six==1.10.0
+SQLAlchemy==1.1.10
+sqlite3==0.0.0
+tempora==1.7

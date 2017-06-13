@@ -86,14 +86,14 @@ class Ithaka(object):
 		self.description = '''# Ithaka
 
 A player can move any piece on the board. The winner is the player at the end of whose turn a row of three pieces of the same colour exists (either orthogonal or diagonal).'''
-		self.maxplayers = 2
+		self.playercounts = [2]
 		self.changelog = ""
 
 	@property
 	def state(self):
 		m = hashlib.sha256()
 		m.update(str(self.version).encode('utf-8'))
-		m.update(str(self.maxplayers).encode('utf-8'))
+		m.update(str(self.playercounts).encode('utf-8'))
 		m.update(self.description.encode('utf-8'))
 		m.update(self.changelog.encode('utf-8'))
 		return m.hexdigest()
@@ -111,7 +111,7 @@ A player can move any piece on the board. The winner is the player at the end of
 			return {
 				"state": self.state,
 				"version": self.version,
-				"maxplayers": self.maxplayers,
+				"playercounts": self.playercounts,
 				"description": self.description,
 				"changelog": self.changelog
 			}

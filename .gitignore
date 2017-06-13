@@ -1,3 +1,6 @@
 logs/*
 sessions/*
+templates/*
 venv/*
+__pycache__
+
