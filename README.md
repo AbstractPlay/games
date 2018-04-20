@@ -12,6 +12,10 @@ The [main website](https://www.abstractplay.com) houses the development blog, wi
 
 ## Change log
 
+20 Apr 2018:
+
+  * Moving things to AWS lambda. Archiving this repository. Now use AbstractPlay/games-aws instead.
+
 13 Jun 2017:
 
   * I haven't been keeping this up to date. See the [development blog](https://www.abstractplay.com/blog) for details.
